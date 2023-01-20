@@ -89,9 +89,6 @@ RUN mkdir -p /home/iceberg/data \
 
 RUN mkdir -p /home/iceberg/localwarehouse /home/iceberg/notebooks /home/iceberg/warehouse /home/iceberg/spark-events /home/iceberg
 COPY ["notebooks/Iceberg - Getting Started.ipynb", "/home/iceberg/notebooks"]
-COPY ["notebooks/Iceberg - Integrated Audits Demo.ipynb", "/home/iceberg/notebooks"]
-COPY ["notebooks/Iceberg - An Introduction to the Iceberg Java API.ipynb", "/home/iceberg/notebooks"]
-COPY ["notebooks/Iceberg - Table Maintenance Spark Procedures.ipynb", "/home/iceberg/notebooks"]
 
 # Add a notebook command
 RUN echo '#! /bin/sh' >> /bin/notebook \
