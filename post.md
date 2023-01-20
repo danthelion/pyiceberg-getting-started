@@ -1,3 +1,14 @@
+- What's a table format anyway
+- When to use iceberg
+- How? this post
+  - docker upppoo
+  - docker exec load data
+    - this creates the icebergerino table
+  - explore minio
+  - explore metadata
+  - python query
+  - duckdb lmao!!
+
 # Getting started with Iceberg using Python
 
 ## Introduction
