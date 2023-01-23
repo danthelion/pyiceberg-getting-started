@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
 FROM python:3.9-bullseye
 
 RUN apt-get update && \
@@ -46,15 +45,7 @@ RUN curl https://repo1.maven.org/maven2/software/amazon/awssdk/url-connection-cl
 # Add iceberg spark runtime jar to IJava classpath
 ENV IJAVA_CLASSPATH=/opt/spark/jars/*
 
-RUN mkdir -p /home/iceberg/data
-
-COPY data /home/iceberg/data
-
-RUN mkdir -p /home/iceberg/scripts
-
-COPY scripts /home/iceberg/scripts
-
-RUN mkdir -p /home/iceberg/warehouse /home/iceberg/spark-events /home/iceberg
+RUN mkdir -p /home/iceberg/warehouse /home/iceberg/spark-events
 
 COPY spark-defaults.conf /opt/spark/conf
 ENV PATH="/opt/spark/sbin:/opt/spark/bin:${PATH}"

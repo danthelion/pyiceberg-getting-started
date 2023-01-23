@@ -9,6 +9,9 @@
   - python query
   - duckdb lmao!!
 
+  - AWS_ACCESS_KEY_ID=minio AWS_SECRET_ACCESS_KEY=minio123  pyiceberg files nyctaxi3.trips
+
+
 # Getting started with Iceberg using Python
 
 ## Introduction
@@ -18,4 +21,4 @@ past, like Parquet and Avro, with a new format that adds features to support dat
 format a specification for a metastore to manage tables called the Iceberg table spec. This allows Iceberg to support
 many different table layouts and file formats, including columnar formats like Parquet and ORC.
 
-Iceberg is designed to improve on the shortcomings of existing table formats by adding support for missing features
+Iceberg is designed to improve on the shortcomings of existing table formats by adding support for missing features.
