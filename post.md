@@ -11,6 +11,18 @@
 
   - AWS_ACCESS_KEY_ID=minio AWS_SECRET_ACCESS_KEY=minio123  pyiceberg files nyctaxi3.trips
 
+OUTLINE
+
+1. What is a table format?
+   2. A primer on table format history
+2. Why Iceberg?
+   3. Features
+3. Who is behind Iceberg and why should I care?
+   4. Developers of Iceberg
+5. Who is using Iceberg?
+   6. Companies using Iceberg, Like Snowflake
+7. The table format wars? Or should this be a separate article
+5. How to get started with Iceberg using Python
 
 # Getting started with Iceberg using Python
 
