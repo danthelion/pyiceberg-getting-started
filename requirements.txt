@@ -2,3 +2,4 @@ pyiceberg[s3fs]
 pyarrow
 duckdb
 pyspark
+pandas

@@ -17,11 +17,11 @@ def query_table(namespace, table_name):
 
     con = table.scan().to_duckdb(table_name="distant_taxi_trips")
 
-    print(con.execute("SELECT * FROM distant_taxi_trips LIMIT 4").fetchall())
+    print(con.execute("SELECT * FROM distant_taxi_trips LIMIT 4").df().head(5))
 
 
 if __name__ == "__main__":
     os.environ["AWS_ACCESS_KEY_ID"] = "minio"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "minio123"
     CATALOG = load_catalog("default")
-    query_table(namespace="nyctaxi3", table_name="trips")
+    query_table(namespace="nyctaxi4", table_name="trips")
